@@ -4,7 +4,7 @@
     <div class="text-body1">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  nothing Sint voluptatem optio dolore quisquam molestiae temporibus     nesciunt nam laudantium in alias, aspernatur eos? Magnam obcaecati nihil provident molestiae, corrupti nam minus?
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptatem optio dolore quisquam molestiae temporibus     nesciunt nam laudantium in alias, aspernatur eos? Magnam obcaecati nihil provident molestiae, corrupti nam minus?
+      <p>sit amet consectetur, adipisicing elit. Sint voluptatem optio dolore quisquam molestiae temporibus     nesciunt nam laudantium in alias, aspernatur eos? Magnam obcaecati nihil provident molestiae, corrupti nam minus?
       </p>
     </div>
   </q-page>
