@@ -32,7 +32,10 @@
       </div>
     </div>
 
-    <q-separator/>
+    <q-separator
+      class="divider"
+      size="10px"
+      color="grey-2" />
   </q-page>
 </template>
 
@@ -54,4 +57,10 @@ export default defineComponent({
   textarea
     font-size: 19px
     line-height: 1.4 !important
+
+.divider
+  border-top: 1px solid
+  border-bottom: 1px solid
+  border-color: $grey-4
+
 </style>
