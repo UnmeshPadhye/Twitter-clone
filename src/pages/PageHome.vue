@@ -36,6 +36,62 @@
       class="divider"
       size="10px"
       color="grey-2" />
+
+    <q-list separator>
+      <q-item
+      v-for="tweet in tweets"
+      :key="tweet.date"
+        class="q-py-md"
+      >
+        <q-item-section avatar top>
+          <q-avatar size="xl">
+            <img src="https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg">
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label class="text-subtitle1">
+            <strong>Unmesh Padhye</strong>
+            <span class="text-grey-7">
+              @UnmeshPadhye
+            </span>
+          </q-item-label>
+          <q-item-label class="tweet-content text-body1">
+            {{ tweet.content }}
+          </q-item-label>
+          <div class="tweet-icons row justify-between q-mt-sm">
+           <q-btn
+              flat
+              round
+              size="sm"
+              color="grey"
+              icon="far fa-comment" />
+           <q-btn
+              flat
+              round
+              size="sm"
+              color="grey"
+              icon="fas fa-retweet" />
+           <q-btn
+              flat
+              round
+              size="sm"
+              color="grey"
+              icon="far fa-heart" />
+           <q-btn
+              flat
+              round
+              size="sm"
+              color="grey"
+              icon="fas fa-trash" />
+          </div>
+        </q-item-section>
+
+        <q-item-section side top>
+          {{ tweet.date}}
+        </q-item-section>
+      </q-item>
+    </q-list>
   </q-page>
 </template>
 
@@ -46,7 +102,17 @@ export default defineComponent({
   name: 'PageHome',
   data () {
     return {
-      newTweetContent: ''
+      newTweetContent: '',
+      tweets: [
+        {
+          content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos animi ducimus nihil fugiat, molestiae facere voluptate ex? Perspiciatis aperiam magnam repellendus, id numquam mollitia corporis quos dolores tempora quasi?',
+          date: 1632249308033
+        },
+        {
+          content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dignissimos animi ducimus nihil fugiat, molestiae facere voluptate ex? Perspiciatis aperiam magnam repellendus, id numquam mollitia corporis quos dolores tempora quasi?',
+          date: 1632249729785
+        }
+      ]
     }
   }
 })
@@ -63,4 +129,9 @@ export default defineComponent({
   border-bottom: 1px solid
   border-color: $grey-4
 
+.tweet-content
+  white-space: pre-line
+
+.tweet-icons
+  margin-left: -5px
 </style>
